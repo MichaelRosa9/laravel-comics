@@ -1,0 +1,13 @@
+main.home {
+  .card {
+    flex-basis: calc(100% / 6);
+  }
+  
+  .button {
+    display: block;
+    margin: 50px auto 0;
+    padding: 15px 65px;       
+    box-shadow: 0 0 2px #000000;
+    font-size: 12px;
+  }
+}

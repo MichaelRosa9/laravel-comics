@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-color: #1A1A1A;
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.clear-fix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+header {
+  height: 115px;
+}
+header img {
+  width: 100px;
+}
+header ul {
+  height: 100%;
+  /* display: flex;
+  align-items: center; */
+}
+header ul li {
+  position: relative;
+  display: inline-block;
+  padding-top: 50px;
+  height: 100%;
+  font-size: 13px;
+  margin: 0 14px;
+  text-transform: uppercase;
+}
+header ul a {
+  position: relative;
+  color: black;
+}
+header ul a.active {
+  color: #0077F3;
+}
+header ul a.active::after, header ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: #0077F3;
+}
+header ul a.active::after {
+  width: 100%;
+}
+header ul a::after {
+  width: 0px;
+}
+header ul a:hover::after {
+  width: 100%;
+  transition: width linear 300ms;
+}
+header ul a:hover {
+  position: relative;
+  color: #0077F3;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url("../img/jumbotron.jpg");
+}
+.jumbotron .button {
+  position: absolute;
+  bottom: -25px;
+  height: 55px;
+  width: 250px;
+  box-shadow: 0 0 2px #000000;
+  font-size: 23px;
+}
+
+.button-blue {
+  border: none;
+  box-shadow: 0 0 2px #000000;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  background-color: #0077F3;
+  cursor: pointer;
+}
+
+footer .footer-top {
+  height: 370px;
+  width: 100%;
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+}
+footer .footer-top .footer-list {
+  position: relative;
+  padding-top: 20px;
+  width: 470px;
+  float: left;
+}
+footer .footer-top ul {
+  color: grey;
+  float: left;
+  padding-right: 45px;
+}
+footer .footer-top ul li {
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+}
+footer .footer-top ul li a {
+  font-weight: 600;
+  color: inherit;
+}
+footer .footer-top ul li a:hover {
+  color: #0077F3;
+}
+footer .footer-top ul:last-child {
+  position: absolute;
+  bottom: -20px;
+}
+footer .footer-top .title {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+}
+footer .footer-top .box {
+  height: 100%;
+  width: 560px;
+  float: right;
+  margin-right: 25px;
+  background-image: url("../img/dc-logo-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+footer .footer-bottom {
+  height: 110px;
+  background-color: #2a2a2a;
+  text-transform: uppercase;
+}
+footer .footer-bottom button {
+  background-color: inherit;
+  padding: 10px;
+  font-weight: 600;
+  border: solid 2px #0077F3;
+  color: white;
+  cursor: pointer;
+}
+footer .footer-bottom button:hover {
+  background-color: #0077F3;
+  transition: background-color 300ms linear;
+}
+footer .footer-bottom h3 {
+  color: #0077F3;
+}
+footer .footer-bottom li {
+  margin-left: 20px;
+}
+footer .footer-bottom img:hover {
+  opacity: 0.6;
+  transition: opacity 1s;
+}

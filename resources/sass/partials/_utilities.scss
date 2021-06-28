@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;  
+}
+
+.flex-center-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.clear-fix:after{
+  display: table;
+  content:'';
+  clear: both;
+}
+

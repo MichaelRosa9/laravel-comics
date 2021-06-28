@@ -1,0 +1,61 @@
+header { 
+  height: 115px;
+  img {
+      width: 100px;
+    }
+  
+    ul {  
+      height: 100%;
+      /* display: flex;
+      align-items: center; */
+  
+      li {
+        position: relative;
+        display: inline-block;
+        padding-top: 50px;
+        height: 100%;
+        font-size: 13px;
+        margin: 0 14px;
+        text-transform: uppercase;        
+        
+      }   
+      a {
+        position: relative;
+        color: black;
+        &.active {
+          color: $brand-color;
+        }
+        &.active::after,
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 3px;
+          background-color: $brand-color;
+        }
+        
+        &.active::after {
+          width: 100%;
+        }
+  
+        //transition effect
+        &::after {          
+          width: 0px;            
+        }
+        &:hover::after {
+          width: 100%;
+          transition: width linear 300ms;
+        }
+        &:hover {
+          position: relative;
+          color: $brand-color;
+        }
+        
+        
+      }
+  
+  
+    } //END ul
+}

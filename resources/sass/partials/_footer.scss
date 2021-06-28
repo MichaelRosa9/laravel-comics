@@ -1,0 +1,89 @@
+footer {
+  .footer-top {
+    height: 370px;
+    width: 100%;
+    background-image: url("../img/footer-bg.jpg");
+    background-size: cover;
+  
+    .footer-list {
+      position: relative;
+      padding-top: 20px;
+      width: 470px;
+      float: left;
+    }
+  
+    ul {
+      color: grey;
+      float: left;
+      padding-right: 45px;
+  
+      li {
+        font-weight: 300;
+        font-size: 13px;
+        margin-bottom: 6px;
+        white-space: nowrap;
+  
+        a {
+          font-weight: 600;
+          color: inherit;
+        }
+        a:hover {
+          color: $brand-color
+        }
+      }
+    }
+    ul:last-child {
+      position: absolute;
+      bottom: -20px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: white;
+      margin-bottom: 20px;
+    }
+  
+    .box {
+      height: 100%;
+      width: 560px;
+      float: right;
+      margin-right: 25px;
+      background-image: url("../img/dc-logo-bg.png");
+      background-size: cover;
+      background-position: center;
+    }
+  } //END footer-top
+  
+  .footer-bottom {
+    height: 110px;
+    background-color: #2a2a2a;
+    text-transform: uppercase;
+     
+    button {
+      background-color: inherit;
+      padding: 10px;
+      font-weight: 600;
+      border: solid 2px $brand-color;
+      color: white;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: $brand-color;
+        transition: background-color 300ms linear;
+      }
+    }
+  
+    h3 {
+      color: $brand-color;
+    }
+    li {
+      margin-left: 20px;
+    }
+  
+    img:hover {
+      opacity: .6;
+      transition: opacity 1s;
+    }
+  } //END footer-bottom
+}
